@@ -32,4 +32,14 @@
     'end': '#\\]'
     'name': 'comment.block.number-sign.embperl'
   }
+  {
+    'begin': '\\[\\$var'
+    'end': '\\$\\]'
+    'patterns': [
+      {
+        'include': 'source.perl#variable'
+      }
+    ]
+    'name': 'source.embperl.vars'
+  }
 ]
