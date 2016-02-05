@@ -6,12 +6,14 @@
     'include': 'text.html.basic'
   }
   {
-    'begin': '\\[!'
-    'end': '!\\]'
+    'begin': '\\[(!|-|)'
+    'end': '\\1\\]'
     'patterns': [
       {
         'include': 'source.perl'
       }
     ]
+    'name': 'source.embperl.perl-block'
+  }
   }
 ]
