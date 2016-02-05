@@ -5,4 +5,13 @@
   {
     'include': 'text.html.basic'
   }
+  {
+    'begin': '\\[!'
+    'end': '!\\]'
+    'patterns': [
+      {
+        'include': 'source.perl'
+      }
+    ]
+  }
 ]
