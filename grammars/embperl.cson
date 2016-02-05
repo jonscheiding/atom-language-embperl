@@ -1,4 +1,7 @@
-'scopeName': 'source.embperl'
+#
+# TODO: Figure out how to do injections into strings and elements
+#
+'scopeName': 'text.html.embperl'
 'name': 'EMBPERL'
 'fileTypes': ['EPL']
 'patterns': [
@@ -13,7 +16,7 @@
         'include': 'source.perl'
       }
     ]
-    'name': 'source.embperl.perl.block'
+    'name': 'text.html.embperl.perl'
   }
   {
     'begin': '\\[#'
@@ -28,7 +31,7 @@
         'include': 'source.perl#variable'
       }
     ]
-    'name': 'source.embperl.vars'
+    'name': 'text.html.embperl.vars'
   }
   {
     'begin': '\\[='
@@ -47,6 +50,6 @@
         'name': 'keyword.control.embperl'
       }
     ]
-    'name': 'source.embperl.control'
+    'name': 'text.html.embperl.control'
   }
 ]
