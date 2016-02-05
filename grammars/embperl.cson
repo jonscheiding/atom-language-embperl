@@ -47,4 +47,18 @@
     'end': '=\\]'
     'name': 'string.localizable.embperl'
   }
+  {
+    'begin': '\\[\\$'
+    'end': '\\$\\]'
+    'patterns': [
+      {
+        'include': 'source.perl'
+      }
+      {
+        'match': '(if|elsif|endif|while|endwhile|do|until|foreach|endforeach|next|last|redo|hidden|var|sub|(dump (out|err|pre|log)))'
+        'name': 'keyword.control.embperl'
+      }
+    ]
+    'name': 'source.embperl.control'
+  }
 ]

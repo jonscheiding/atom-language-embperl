@@ -27,7 +27,7 @@ $]
   <body>
   [$ if 1 $]
     <div>This is in a conditional</div>
-    [+ "This is an expression" +]
+    [+ "This is an expression" . $some_stuff +]
   [$ endif $]
   </body>
 </html>
