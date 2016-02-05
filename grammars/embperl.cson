@@ -42,4 +42,9 @@
     ]
     'name': 'source.embperl.vars'
   }
+  {
+    'begin': '\\[='
+    'end': '=\\]'
+    'name': 'string.localizable.embperl'
+  }
 ]
