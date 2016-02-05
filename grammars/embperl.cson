@@ -13,7 +13,7 @@
         'include': 'source.perl'
       }
     ]
-    'name': 'source.embperl.perl-block'
+    'name': 'source.embperl.perl.block'
   }
   {
     'begin': '\\[\\+'
@@ -23,6 +23,6 @@
       # it with the block above
       'include': 'source.perl'
     ]
-    'name': 'source.embperl.perl-expression'
+    'name': 'source.embperl.perl.expression'
   }
 ]
