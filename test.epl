@@ -1,3 +1,33 @@
-<html>
+[!
+  use Carp;
+  use List::MoreUtils;
+!]
 
+[$var
+  $dbh
+$]
+
+[-
+  cluck "This is some procedural code";
+-]
+
+<html>
+  <head>
+    <script type="text/javascript">
+      function thisIsAFunction() {
+        return 100;
+      }
+    </script>
+    <style type="text/css">
+      .class {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+  [$ if 1 $]
+    <div>This is in a conditional</div>
+    [+ "This is an expression" +]
+  [$ endif $]
+  </body>
 </html>
