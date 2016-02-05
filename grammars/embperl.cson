@@ -6,7 +6,7 @@
     'include': 'text.html.basic'
   }
   {
-    'begin': '\\[(!|-|)'
+    'begin': '\\[(!|-|\\*)'
     'end': '\\1\\]'
     'patterns': [
       {
