@@ -1,4 +1,8 @@
 'scopeName': 'source.embperl'
 'name': 'EMBPERL'
 'fileTypes': ['EPL']
-'patterns': []
+'patterns': [
+  {
+    'include': 'text.html.basic'
+  }
+]
