@@ -1,0 +1,9 @@
+{
+  "name": "language-embperl",
+  "version": "0.0.1",
+  "description": "Syntax highlighting for Embperl",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  }
+}
