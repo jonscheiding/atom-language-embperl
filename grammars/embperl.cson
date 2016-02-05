@@ -27,4 +27,9 @@
     ]
     'name': 'source.embperl.perl.expression'
   }
+  {
+    'begin': '\\[#'
+    'end': '#\\]'
+    'name': 'comment.block.number-sign.embperl'
+  }
 ]
