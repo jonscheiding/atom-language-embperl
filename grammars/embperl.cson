@@ -19,9 +19,11 @@
     'begin': '\\[\\+'
     'end': '\\+\\]'
     'patterns': [
-      # TODO: It would be nice to limit this to expressions, otherwise combine
-      # it with the block above
-      'include': 'source.perl'
+      {
+        # TODO: It would be nice to limit this to expressions, otherwise combine
+        # it with the block above
+        'include': 'source.perl'
+      }
     ]
     'name': 'source.embperl.perl.expression'
   }
