@@ -11,6 +11,8 @@ $]
   cluck "This is some procedural code";
 -]
 
+[# Here is a comment #]
+
 <html>
   <head>
     <script type="text/javascript">
@@ -29,5 +31,8 @@ $]
     <div>This is in a conditional</div>
     [+ "This is an expression" . $some_stuff +]
   [$ endif $]
+  
+  <div style="This is [+ $code +] inside another [# commented #] scope."></div>
+  
   </body>
 </html>
