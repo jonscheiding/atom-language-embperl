@@ -45,16 +45,18 @@
         'name': 'comment.block.embperl'
       }
       {
-        'begin': '\\[\\$var'
         #
         # Embperl construct for Perl variable declarations
         # [$ var $]
         # (Special case of [$ $] below)
         #
+        'begin': '\\[\\s+\\$(var)'
         'end': '\\$\\]'
         'beginCaptures':
           '0':
             'name': 'punctuation.section.embedded.begin.embperl'
+          '1':
+            'name': 'keyword.control.embperl'
         'endCaptures':
           '0':
             'name': 'punctuation.section.embedded.end.embperl'
