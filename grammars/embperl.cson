@@ -8,48 +8,52 @@
   {
     'include': 'text.html.basic'
   }
-  {
-    'begin': '\\[(!|-|\\*|\\+)'
-    'end': '\\1\\]'
-    'patterns': [
-      {
-        'include': 'source.perl'
-      }
-    ]
-    'name': 'text.html.embperl.perl'
-  }
-  {
-    'begin': '\\[#'
-    'end': '#\\]'
-    'name': 'comment.block.number-sign.embperl'
-  }
-  {
-    'begin': '\\[\\$var'
-    'end': '\\$\\]'
-    'patterns': [
-      {
-        'include': 'source.perl#variable'
-      }
-    ]
-    'name': 'text.html.embperl.vars'
-  }
-  {
-    'begin': '\\[='
-    'end': '=\\]'
-    'name': 'string.localizable.embperl'
-  }
-  {
-    'begin': '\\[\\$'
-    'end': '\\$\\]'
-    'patterns': [
-      {
-        'include': 'source.perl'
-      }
-      {
-        'match': '(if|elsif|endif|while|endwhile|do|until|foreach|endforeach|next|last|redo|hidden|var|sub|(dump (out|err|pre|log)))'
-        'name': 'keyword.control.embperl'
-      }
-    ]
-    'name': 'text.html.embperl.control'
-  }
 ]
+'injections':
+  'text.html.embperl':
+    'patterns': [
+      {
+        'begin': '\\[(!|-|\\*|\\+)'
+        'end': '\\1\\]'
+        'patterns': [
+          {
+            'include': 'source.perl'
+          }
+        ]
+        'name': 'text.html.embperl.perl'
+      }
+      {
+        'begin': '\\[#'
+        'end': '#\\]'
+        'name': 'comment.block.number-sign.embperl'
+      }
+      {
+        'begin': '\\[\\$var'
+        'end': '\\$\\]'
+        'patterns': [
+          {
+            'include': 'source.perl#variable'
+          }
+        ]
+        'name': 'text.html.embperl.vars'
+      }
+      {
+        'begin': '\\[='
+        'end': '=\\]'
+        'name': 'string.localizable.embperl'
+      }
+      {
+        'begin': '\\[\\$'
+        'end': '\\$\\]'
+        'patterns': [
+          {
+            'include': 'source.perl'
+          }
+          {
+            'match': '(if|elsif|endif|while|endwhile|do|until|foreach|endforeach|next|last|redo|hidden|var|sub|(dump (out|err|pre|log)))'
+            'name': 'keyword.control.embperl'
+          }
+        ]
+        'name': 'text.html.embperl.control'
+      }
+    ]
