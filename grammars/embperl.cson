@@ -15,6 +15,12 @@
       {
         'begin': '\\[(!|-|\\*|\\+)'
         'end': '\\1\\]'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.section.embedded.begin.embperl'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.section.embedded.end.embperl'
         'patterns': [
           {
             'include': 'source.perl'
@@ -25,11 +31,23 @@
       {
         'begin': '\\[#'
         'end': '#\\]'
-        'name': 'comment.block.number-sign.embperl'
+        'beginCaptures':
+          '0':
+            'name': 'comment.block.begin.embperl'
+        'endCaptures':
+          '0':
+            'name': 'comment.block.end.embperl'
+        'name': 'comment.block.embperl'
       }
       {
         'begin': '\\[\\$var'
         'end': '\\$\\]'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.section.embedded.begin.embperl'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.section.embedded.end.embperl'
         'patterns': [
           {
             'include': 'source.perl#variable'
@@ -40,11 +58,23 @@
       {
         'begin': '\\[='
         'end': '=\\]'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.section.embedded.begin.embperl'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.section.embedded.end.embperl'
         'name': 'string.localizable.embperl'
       }
       {
         'begin': '\\[\\$'
         'end': '\\$\\]'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.section.embedded.begin.embperl'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.section.embedded.end.embperl'
         'patterns': [
           {
             'include': 'source.perl'
