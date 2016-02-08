@@ -1,6 +1,3 @@
-#
-# TODO: Figure out how to do injections into strings and elements
-#
 'scopeName': 'text.html.embperl'
 'name': 'EMBPERL'
 'fileTypes': ['EPL']
@@ -13,6 +10,10 @@
   'text.html.embperl':
     'patterns': [
       {
+        #
+        # Embperl constructs for Perl source code
+        # [+ +], [- -], [* *]
+        #
         'begin': '\\[(!|-|\\*|\\+)'
         'end': '\\1\\]'
         'beginCaptures':
@@ -29,6 +30,10 @@
         'name': 'text.html.embperl.perl'
       }
       {
+        #
+        # Embperl construct for comments
+        # [# #]
+        #
         'begin': '\\[#'
         'end': '#\\]'
         'beginCaptures':
@@ -41,6 +46,11 @@
       }
       {
         'begin': '\\[\\$var'
+        #
+        # Embperl construct for Perl variable declarations
+        # [$ var $]
+        # (Special case of [$ $] below)
+        #
         'end': '\\$\\]'
         'beginCaptures':
           '0':
@@ -56,6 +66,9 @@
         'name': 'text.html.embperl.vars'
       }
       {
+        #
+        # Embperl construct for a localizable string
+        #
         'begin': '\\[='
         'end': '=\\]'
         'beginCaptures':
@@ -67,6 +80,15 @@
         'name': 'string.localizable.embperl'
       }
       {
+        #
+        # Embperl construct for a control flow mechanism
+        #
+        # [$ if $] .. [$ endif $], etc
+        #
+        # Would be nice to split this out to provide more targeted
+        # grammer for each of the individual keywords below.  Maybe
+        # someday I will feel like that's worth the effort.
+        #
         'begin': '\\[\\$'
         'end': '\\$\\]'
         'beginCaptures':
