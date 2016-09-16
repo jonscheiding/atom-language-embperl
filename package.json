@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "description": "Syntax highlighting for Embperl",
   "engines": {
-    "atom": "*",
-    "node": "*"
-  }
+    "atom": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonscheiding/atom-language-embperl"
+  },
+  "license": "MIT"
 }
