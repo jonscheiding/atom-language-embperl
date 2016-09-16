@@ -1,6 +1,6 @@
 {
   "name": "language-embperl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Atom  grammar for the old-school EMBPERL syntax.",
   "engines": {
     "atom": "*"
